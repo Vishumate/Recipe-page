@@ -1,0 +1,135 @@
+:root{
+    --fontSize:1rem;
+    --paddingofPAge:5vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.page{
+    background-color: white;
+    border-radius: 15px;
+    width: 40vw;
+    padding: var(--paddingofPAge);
+}
+.image{
+    overflow: hidden;
+}
+.image img{
+    width: 40vw;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(46, 45, 45);
+}
+.about{
+    font-size: var(--fontSize);
+    color: rgb(74, 73, 73);
+}
+
+.preparation-time{
+    padding: 5px 0;
+    background-color: rgba(209, 144, 209, 0.137);
+    border-radius: 10px;
+    padding: 15px;
+}
+.preparation-time ul{
+    list-style-type: disc; 
+    padding-left: 20px;
+    color: purple;
+    font-size:2vw;
+}
+.block{
+    padding: 15px;
+}
+.block ul{
+    color: rgb(114, 17, 17);
+}
+.block ol{
+    color: rgb(114, 17, 17);
+    font-weight: bolder;
+}
+
+.heading{
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: rgb(114, 17, 17);
+    font-weight: 700;
+}
+.preparation-time div{
+    font-size: 1.2rem;
+    color: purple;
+    font-weight: 600;
+}
+
+.short{
+    font-weight: bold;
+    color: rgb(94, 93, 93);
+}
+li span{
+    color: rgb(106, 102, 102);
+}
+li{
+    padding: 5px 0;
+    font-size: var(--fontSize);
+    font-weight: 500;
+}
+.nutrition{
+    padding: 15px;
+}
+
+p{
+    font-size: var(--fontSize);
+    color: rgb(106, 102, 102);
+}
+
+.nutrients{
+    color:  rgb(106, 102, 102);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.value{
+    color: rgb(114, 17, 17);
+    font-weight: bold;
+}
+.page>div{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:750px){
+    html body{
+        position: relative;
+        background-color: white;
+    }
+    body .page{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        margin-left: 5vw;
+    }
+    .page .image img{
+        width: 100vw;
+
+        border-radius: 0;
+    }
+    .page .image{
+        width: 100vw;
+    }
+    :root{
+        --paddingofPAge:0;
+    }
+}
