@@ -119,16 +119,19 @@ p{
         position: absolute;
         top: 0;
         width: 100vw;
-        margin-left: 5vw;
     }
     .page .image img{
         width: 100vw;
-
         border-radius: 0;
     }
     .page .image{
         width: 100vw;
+        height: 40vw;
     }
+    .details{
+        padding: 0 5vw;
+    }
+
     :root{
         --paddingofPAge:0;
     }
